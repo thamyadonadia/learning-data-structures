@@ -1,5 +1,5 @@
-#MAKEFILE By: Afonso Salvador de Magalhaes
-#With support of Kevin Carvalho de Jesus and João Paulo Moura
+# MAKEFILE By: Afonso Salvador de Magalhaes
+# With support of Kevin Carvalho de Jesus and João Paulo Moura
 
 NAME_PROGRAM = prog
 CC = gcc

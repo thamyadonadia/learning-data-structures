@@ -83,7 +83,7 @@ int ocorrencias (Arv* a, Aluno* al){
     }
 }
 
-static int ocorrencias_2 (Arv* a, Aluno* al){
+/** static int ocorrencias_2 (Arv* a, Aluno* al){
     if(a == NULL){
         return 0;
 
@@ -102,7 +102,7 @@ static int ocorrencias_2 (Arv* a, Aluno* al){
     }else{
         return ocorrencias_2(a->dir, al) + ocorrencias_2(a->esq, al); 
     }
-}
+} **/
 
 int folhas (Arv* a){
     if(a == NULL){

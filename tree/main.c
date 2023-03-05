@@ -22,12 +22,8 @@ int main(){
     Arv* a1 = arv_cria(al1, a2, a4);    
 
     // verifica se a árvore esá vazia
-    if(arv_vazia(a1)){
-        printf("\nA árvore está vazia!\n");
-
-    }else{
-        arv_imprime(a1);
-    }
+    if(arv_vazia(a1)) printf("\nA árvore está vazia!\n");
+    else arv_imprime(a1);
 
     Arv* pai = arv_pai(a1, al3);
     printf("\n\nO pai de a3 é:\n");
@@ -36,12 +32,8 @@ int main(){
     printf("A árvore possui %d folhas\n", folhas(a1));
     printf("\nO aluno a2 aparece %d vezes na árvore\n", ocorrencias(a1, al1));
 
-    if(arv_pertence(a1, getNome(al7))){
-        printf("\nO aluno a7 pertence à árvore!\n");
-
-    }else {
-        printf("\nO aluno a7 não pertence à árvore!\n");
-    }
+    if(arv_pertence(a1, getNome(al7))) printf("\nO aluno a7 pertence à árvore!\n");
+    else printf("\nO aluno a7 não pertence à árvore!\n");
 
     arv_libera(a1);
     excluiAluno(al1);
